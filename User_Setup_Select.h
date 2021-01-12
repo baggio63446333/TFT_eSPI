@@ -192,6 +192,7 @@
      #define  TFT_DRIVER 0x0000
 #endif
 
+#ifdef ESP8266
 // These are the pins for ESP8266 boards
 //      Name   GPIO    NodeMCU      Function
 #define PIN_D0  16  // GPIO16       WAKE
@@ -213,3 +214,4 @@
 
 #define PIN_D11  9  // SD2
 #define PIN_D12 10  // SD4
+#endif
