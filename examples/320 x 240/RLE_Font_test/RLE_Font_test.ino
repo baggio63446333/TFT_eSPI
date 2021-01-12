@@ -25,7 +25,7 @@ unsigned long targetTime = 0; // Used for testing draw times
 
 void setup(void) {
   tft.init();
-  tft.setRotation(1);
+  tft.setRotation(3);
 }
 
 void loop() {

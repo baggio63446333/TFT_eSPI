@@ -19,7 +19,7 @@ byte state = 0;
 void setup(void) {
   tft.begin();
 
-  tft.setRotation(1);
+  tft.setRotation(3);
 
   tft.fillScreen(TFT_BLACK);
 

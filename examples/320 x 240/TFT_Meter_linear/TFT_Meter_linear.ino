@@ -35,7 +35,7 @@ int d = 0;
 
 void setup(void) {
   tft.init();
-  tft.setRotation(1);
+  tft.setRotation(3);
   Serial.begin(57600); // For debug
   tft.fillScreen(TFT_BLACK);
 

@@ -52,7 +52,7 @@ void setup(void) {
 
   tft.begin();
 
-  tft.setRotation(1);
+  tft.setRotation(3);
 
 }
 
