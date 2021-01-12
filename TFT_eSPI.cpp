@@ -22,6 +22,8 @@
   #include "Processors/TFT_eSPI_ESP8266.c"
 #elif defined (STM32) // (_VARIANT_ARDUINO_STM32_) stm32_def.h
   #include "Processors/TFT_eSPI_STM32.c"
+#elif defined (ARDUINO_ARCH_SPRESENSE)
+  #include "Processors/TFT_eSPI_Spresense.c"
 #else
   #include "Processors/TFT_eSPI_Generic.c"
 #endif
@@ -513,7 +515,7 @@ void TFT_eSPI::init(uint8_t tc)
 {
   if (_booted)
   {
-#if !defined (ESP32) && !defined(TFT_PARALLEL_8_BIT)
+#if !defined (ESP32) && !defined(ARDUINO_ARCH_SPRESENSE) && !defined(TFT_PARALLEL_8_BIT)
   #if defined (TFT_CS) && (TFT_CS >= 0)
     cspinmask = (uint32_t) digitalPinToBitMask(TFT_CS);
   #endif
