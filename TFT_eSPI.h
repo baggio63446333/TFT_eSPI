@@ -54,6 +54,8 @@
   #include "Processors/TFT_eSPI_ESP8266.h"
 #elif defined (STM32)
   #include "Processors/TFT_eSPI_STM32.h"
+#elif defined (ARDUINO_ARCH_SPRESENSE)
+  #include "Processors/TFT_eSPI_Spresense.h"
 #else
   #include "Processors/TFT_eSPI_Generic.h"
 #endif

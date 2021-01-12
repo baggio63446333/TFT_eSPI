@@ -36,7 +36,7 @@ unsigned long drawTime = 0;
 void setup(void) {
   Serial.begin(115200);
   tft.init();
-  tft.setRotation(1);
+  tft.setRotation(3);
 }
 
 void loop() {
