@@ -154,8 +154,9 @@
 // ###### EDIT THE PIN NUMBERS IN THE LINES FOLLOWING TO SUIT YOUR ESP8266 SETUP ######
 
 // For NodeMCU - use pin numbers in the form PIN_Dx where Dx is the NodeMCU pin designation
-#define TFT_DC   9  // Data Command control pin
-#define TFT_RST  8  // Reset pin (could connect to NodeMCU RST, see next line)
+//#define TFT_CS   PIN_D8  // Chip select control pin D8
+//#define TFT_DC   PIN_D3  // Data Command control pin
+//#define TFT_RST  PIN_D4  // Reset pin (could connect to NodeMCU RST, see next line)
 //#define TFT_RST  -1    // Set TFT_RST to -1 if the display RESET is connected to NodeMCU RST or 3.3V
 
 //#define TFT_BL PIN_D1  // LED back-light (only for ST7789 with backlight control pin)
@@ -264,6 +265,20 @@
 //#define TFT_RST  -1   // Set TFT_RST to -1 if the display RESET is connected to processor reset
                         // Use an Arduino pin for initial testing as connecting to processor reset
                         // may not work (pulse too short at power up?)
+
+// ###### EDIT THE PIN NUMBERS IN THE LINES FOLLOWING TO SUIT YOUR SPRESENSE SETUP   ######
+
+// For SPRESENSE Dev board (only tested with ILI9341 display)
+// The hardware SPI can be mapped to any pins
+
+//#define TFT_MISO 12
+//#define TFT_MOSI 11
+//#define TFT_SCLK 13
+//#define TFT_CS   10  // Chip select control pin
+#define TFT_DC      9  // Data Command control pin
+#define TFT_RST     8  // Reset pin (could connect to RST pin)
+
+#define TOUCH_CS    7  // Chip select pin (T_CS) of touch screen
 
 // ##################################################################################
 //
