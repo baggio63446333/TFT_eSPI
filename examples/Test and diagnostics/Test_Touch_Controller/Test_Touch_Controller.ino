@@ -35,11 +35,11 @@ void loop() {
 
   tft.getTouchRaw(&x, &y);
   
-  Serial.printf("x: %i     ", x);
+  printf("x: %i     ", x);
 
-  Serial.printf("y: %i     ", y);
+  printf("y: %i     ", y);
 
-  Serial.printf("z: %i \n", tft.getTouchRawZ());
+  printf("z: %i \n", tft.getTouchRawZ());
 
   delay(250);
 
