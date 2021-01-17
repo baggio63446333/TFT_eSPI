@@ -28,7 +28,7 @@ void setup() {
 /*
   // Replace above line with the code sent to Serial Monitor
   // once calibration is complete, e.g.:
-  uint16_t calData[5] = { 286, 3534, 283, 3600, 6 };
+  uint16_t calData[5] = { 667, 3042, 801, 2909, 7 };
   tft.setTouch(calData);
 */
 
